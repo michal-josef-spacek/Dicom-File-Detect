@@ -16,7 +16,7 @@ Readonly::Scalar our $DCM_MAGIC => qw{DICM};
 # Version.
 our $VERSION = 0.01;
 
-# Detect dicom file.
+# Detect DICOM file.
 sub dicom_detect_file {
 	my $file = shift;
 	my $dcm_flag = 0;
