@@ -11,6 +11,7 @@ author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Dicom-File-Detect';
 requires 'Readonly' => 0;
+requires 'perl' => '5.8.0';
 readme_from 'Detect.pm';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Dicom-File-Detect';
