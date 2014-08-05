@@ -1,11 +1,12 @@
 TODO
 ====
+2.
+
+Applied
+=======
 1. First version.
 From magic file
 # DICOM medical imaging data
 128     string  DICM                    DICOM medical imaging data
 !:mime  application/dicom
-2.
-
-Applied
-=======
+OK [20140805] skim
