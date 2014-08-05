@@ -14,7 +14,7 @@ Readonly::Array our @EXPORT => qw(dicom_detect_file);
 Readonly::Scalar our $DCM_MAGIC => qw{DICM};
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Detect DICOM file.
 sub dicom_detect_file {
@@ -159,6 +159,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
