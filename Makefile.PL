@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'TODO';
+abstract 'Detect DICOM file through magic string.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Dicom-File-Detect';
