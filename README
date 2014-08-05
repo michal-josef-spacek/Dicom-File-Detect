@@ -1,0 +1,102 @@
+NAME
+    Dicom::File::Detect - Detect DICOM file through magic string.
+
+SYNOPSIS
+     use Dicom::File::Detect qw(dicom_detect_file);
+     my $dcm_flag = dicom_detect_file($file);
+
+SUBROUTINES
+    "dicom_detect_file($file)"
+             Detect DICOM file.
+             Returns 1/0.
+
+ERRORS
+     dicom_detect_file():
+             Cannot close file '%s'.
+             Cannot open file '%s'.
+
+EXAMPLE1
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Dicom::File::Detect qw(dicom_detect_file);
+     use File::Temp qw(tempfile);
+     use IO::Barf qw(barf);
+     use MIME::Base64;
+
+     # Data in base64.
+     my $data = <<'END';
+     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+     AAAAAAAAAAAAAAAAAABESUNNCg==
+     END
+
+     # Temp file.
+     my (undef, $temp_file) = tempfile();
+
+     # Save data to file.
+     barf($temp_file, decode_base64($data));
+
+     # Check file.
+     my $dcm_flag = dicom_detect_file($temp_file);
+
+     # Print out.
+     if ($dcm_flag) {
+             print "File '$temp_file' is DICOM file.\n";
+     } else {
+             print "File '$temp_file' isn't DICOM file.\n";
+     }
+
+     # Output like:
+     # File '%s' is DICOM file.
+
+EXAMPLE2
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Dicom::File::Detect qw(dicom_detect_file);
+
+     # Arguments.
+     if (@ARGV < 1) {
+             print STDERR "Usage: $0 file\n";
+             exit 1;
+     }
+     my $file = $ARGV[0];
+
+     # Check file.
+     my $dcm_flag = dicom_detect_file($file);
+
+     # Print out.
+     if ($dcm_flag) {
+             print "File '$file' is DICOM file.\n";
+     } else {
+             print "File '$file' isn't DICOM file.\n";
+     }
+
+     # Output:
+     # Usage: dicom-detect-file file
+
+DEPENDENCIES
+    Error::Pure, Exporter, Readonly.
+
+SEE ALSO
+    DicomPack.
+
+REPOSITORY
+    <https://github.com/tupinek/Dicom-File-Detect>
+
+AUTHOR
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
