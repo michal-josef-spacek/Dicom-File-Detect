@@ -141,7 +141,8 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
-L<DicomPack>.
+L<DicomPack>,
+L<File::Find::Rule::Dicom>.
 
 =head1 REPOSITORY
 
