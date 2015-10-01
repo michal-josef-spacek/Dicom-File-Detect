@@ -148,8 +148,17 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
-L<DicomPack>,
-L<File::Find::Rule::Dicom>.
+=over
+
+=item L<File::Find::Rule::Dicom>
+
+Common rules for searching for DICOM things.
+
+=item L<Task::Dicom>
+
+Install the Dicom modules.
+
+=back
 
 =head1 REPOSITORY
 

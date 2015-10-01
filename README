@@ -90,7 +90,11 @@ DEPENDENCIES
     Error::Pure, Exporter, Readonly.
 
 SEE ALSO
-    DicomPack, File::Find::Rule::Dicom.
+    File::Find::Rule::Dicom
+        Common rules for searching for DICOM things.
+
+    Task::Dicom
+        Install the Dicom modules.
 
 REPOSITORY
     <https://github.com/tupinek/Dicom-File-Detect>
