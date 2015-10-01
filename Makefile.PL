@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Detect DICOM file through magic string.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Dicom-File-Detect';
 requires 'Readonly' => 0;
