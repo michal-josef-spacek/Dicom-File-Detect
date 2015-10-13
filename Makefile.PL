@@ -18,6 +18,7 @@ resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 resources 'homepage' => 'https://github.com/tupinek/Dicom-File-Detect';
 resources 'repository' => 'git://github.com/tupinek/Dicom-File-Detect';
 test_requires 'English' => 0;
+test_requires 'Error::Pure::Utils' => 0.22;
 test_requires 'File::Object' => 0.05;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
