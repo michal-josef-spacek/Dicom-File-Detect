@@ -1,6 +1,7 @@
 0.03
  - Fix test.
  - Fix test dependencies.
+ - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SEE ALSO section in doc.
  - Move author tests to xt/ directory.
  - Remove diacritics from author name in Makefile.PL.
