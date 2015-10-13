@@ -7,9 +7,8 @@ use Dicom::File::Detect qw(dicom_detect_file);
 use English;
 use Error::Pure::Utils qw(clean);
 use File::Object;
-use Test::More;
+use Test::More 'tests' => 4;
 use Test::NoWarnings;
-use Test::Pod::Coverage 'tests' => 4;
 
 # Data directory.
 my $data_dir = File::Object->new->up->dir('data')->set;
