@@ -14,7 +14,7 @@ Readonly::Array our @EXPORT => qw(dicom_detect_file);
 Readonly::Scalar our $DCM_MAGIC => qw{DICM};
 
 # Version.
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 # Detect DICOM file.
 sub dicom_detect_file {
@@ -177,6 +177,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
