@@ -3,6 +3,8 @@ Detect.pm
 examples/ex1.pl
 examples/ex2.pl
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -19,8 +21,8 @@ README
 SIGNATURE
 t/data/ex1.dcm
 t/data/ex2.dcm
-t/Dicom-File-Detect/00-use.t
-t/Dicom-File-Detect/01-version.t
-t/Dicom-File-Detect/02-pod_coverage.t
-t/Dicom-File-Detect/03-pod.t
-t/Dicom-File-Detect/04-dicom_detect_file.t
+t/Dicom-File-Detect/01-use.t
+t/Dicom-File-Detect/02-version.t
+t/Dicom-File-Detect/03-dicom_detect_file.t
+xt/Dicom-File-Detect/01-pod_coverage.t
+xt/Dicom-File-Detect/02-pod.t
