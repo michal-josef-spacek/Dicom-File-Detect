@@ -1,6 +1,7 @@
 0.04
  - Update Module::Install to 1.19 version.
  - Update author github username.
+ - Update author name.
 
 0.03 2015-10-13T23:32:55+02:00
  - Fix test.
