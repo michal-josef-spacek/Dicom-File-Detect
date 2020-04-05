@@ -20,8 +20,8 @@ readme_from 'Detect.pm';
 recursive_author_tests('xt');
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Dicom-File-Detect';
-resources 'homepage' => 'https://github.com/tupinek/Dicom-File-Detect';
-resources 'repository' => 'git://github.com/tupinek/Dicom-File-Detect';
+resources 'homepage' => 'https://github.com/michal-josef-spacek/Dicom-File-Detect';
+resources 'repository' => 'git://github.com/michal-josef-spacek/Dicom-File-Detect';
 test_requires 'English' => 0;
 test_requires 'Error::Pure::Utils' => 0.22;
 test_requires 'File::Object' => 0.05;

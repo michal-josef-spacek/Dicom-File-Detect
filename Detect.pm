@@ -155,7 +155,7 @@ Install the Dicom modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Dicom-File-Detect>
+L<https://github.com/michal-josef-spacek/Dicom-File-Detect>
 
 =head1 AUTHOR
 
