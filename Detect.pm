@@ -16,12 +16,14 @@ our $VERSION = 0.04;
 # Detect DICOM file.
 sub dicom_detect_file {
 	my $file = shift;
+
 	my $dcm_flag = 0;
 	open my $fh, '<', $file or err "Cannot open file '$file'.";
 	my $seek = seek $fh, 128, 0;
 	my $magic;
 	my $read = read $fh, $magic, 4;
 	close $fh or err "Cannot close file '$file'.";
+
 	if ($magic eq $DCM_MAGIC) {
 		return 1;
 	} else {
