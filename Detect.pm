@@ -1,11 +1,9 @@
 package Dicom::File::Detect;
 
-# Pragmas.
 use base qw(Exporter);
 use strict;
 use warnings;
 
-# Modules.
 use Error::Pure qw(err);
 use Readonly;
 
@@ -13,7 +11,6 @@ use Readonly;
 Readonly::Array our @EXPORT => qw(dicom_detect_file);
 Readonly::Scalar our $DCM_MAGIC => qw{DICM};
 
-# Version.
 our $VERSION = 0.04;
 
 # Detect DICOM file.
@@ -75,11 +72,9 @@ See L<DICOM on Wikipedia|https://en.wikipedia.org/wiki/DICOM>.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Dicom::File::Detect qw(dicom_detect_file);
  use File::Temp qw(tempfile);
  use IO::Barf qw(barf);
@@ -113,11 +108,9 @@ See L<DICOM on Wikipedia|https://en.wikipedia.org/wiki/DICOM>.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Dicom::File::Detect qw(dicom_detect_file);
 
  # Arguments.

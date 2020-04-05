@@ -22,11 +22,9 @@ ERRORS
              Cannot open file '%s'.
 
 EXAMPLE1
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Dicom::File::Detect qw(dicom_detect_file);
      use File::Temp qw(tempfile);
      use IO::Barf qw(barf);
@@ -59,11 +57,9 @@ EXAMPLE1
      # File '%s' is DICOM file.
 
 EXAMPLE2
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Dicom::File::Detect qw(dicom_detect_file);
 
      # Arguments.
