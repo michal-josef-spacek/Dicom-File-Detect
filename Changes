@@ -1,3 +1,5 @@
+0.05
+
 0.04 2020-04-05T16:59:39+02:00
  - Fix Makefile.PL fails with no '.' in @INC.
  - Improve LICENSE AND COPYRIGHT section in doc.
