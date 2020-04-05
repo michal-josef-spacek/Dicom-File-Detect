@@ -56,14 +56,13 @@ See L<DICOM on Wikipedia|https://en.wikipedia.org/wiki/DICOM>.
 
 =head1 SUBROUTINES
 
-=over 8
+=head2 C<dicom_detect_file>
 
-=item C<dicom_detect_file($file)>
+ my $dcm_flag = dicom_detect_file($file);
 
- Detect DICOM file.
- Returns 1/0.
+Detect DICOM file.
 
-=back
+Returns 1/0.
 
 =head1 ERRORS
 

@@ -13,9 +13,12 @@ DESCRIPTION
     DICOM on Wikipedia <https://en.wikipedia.org/wiki/DICOM>.
 
 SUBROUTINES
-    "dicom_detect_file($file)"
-             Detect DICOM file.
-             Returns 1/0.
+  "dicom_detect_file"
+     my $dcm_flag = dicom_detect_file($file);
+
+    Detect DICOM file.
+
+    Returns 1/0.
 
 ERRORS
      dicom_detect_file():
