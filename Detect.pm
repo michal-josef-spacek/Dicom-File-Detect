@@ -44,6 +44,7 @@ Dicom::File::Detect - Detect DICOM file through magic string.
 =head1 SYNOPSIS
 
  use Dicom::File::Detect qw(dicom_detect_file);
+
  my $dcm_flag = dicom_detect_file($file);
 
 =head1 DESCRIPTION

@@ -3,6 +3,7 @@ NAME
 
 SYNOPSIS
      use Dicom::File::Detect qw(dicom_detect_file);
+
      my $dcm_flag = dicom_detect_file($file);
 
 DESCRIPTION
